@@ -1,0 +1,16 @@
+https://www.hackerrank.com/challenges/funny-string/problem
+
+
+n_s = int(input())
+for caseNo in range(n_s):
+    string = input()
+    rev_s = string[::-1]
+    n = len(string)
+    for i in range(1, n):
+        s_diff = abs(ord(string[i]) - ord(string[i - 1]))
+        r_diff = abs(ord(rev_s[i]) - ord(rev_s[i - 1]))
+        if s_diff != r_diff:
+            print("Not Funny")
+            break
+    else:
+        print("Funny")	

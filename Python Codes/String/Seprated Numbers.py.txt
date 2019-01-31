@@ -1,0 +1,19 @@
+https://www.hackerrank.com/challenges/separate-the-numbers/
+
+
+def separateNumbers(n):
+    if len(set(n)) == 1:
+        print('NO')
+        return 0
+    curr = ''
+    for i in range(len(n)//2):
+        curr += n[i]
+        temp = ''
+        j = 0
+        while len(temp + str(int(curr)+j)) <= len(n):
+            temp += str(int(curr)+j)
+            j += 1
+        if n in temp:
+            print('YES', curr)
+            return 0
+    print('NO')

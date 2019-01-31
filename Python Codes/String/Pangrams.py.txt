@@ -1,0 +1,9 @@
+https://www.hackerrank.com/challenges/pangrams/problem
+
+def pangrams(s):
+    s = s.replace(" ","")
+    s = s.lower()
+    if len((set(s)) & set("abcdefghijklmnopqrstuvwxyz")) == 26:
+        return("pangram")
+    else:
+        return("not pangram")

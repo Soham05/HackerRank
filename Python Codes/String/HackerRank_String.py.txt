@@ -1,0 +1,4 @@
+https://www.hackerrank.com/challenges/hackerrank-in-a-string/problem
+
+def hackerrankInString(s):
+        return ('YES' if re.search(r'.*h.*a.*c.*k.*e.*r.*r.*a.*n.*k.*', s) else 'NO')

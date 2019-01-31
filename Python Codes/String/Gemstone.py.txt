@@ -1,0 +1,10 @@
+https://www.hackerrank.com/challenges/gem-stones/problem
+
+def gemstones(arr):
+    n = len(arr)
+    for i in range(n):
+        if i == 0:
+            gem = set(arr[i])
+        else:
+            gem = gem.intersection(set(arr[i]))
+    return(len(gem))

@@ -1,0 +1,9 @@
+https://www.hackerrank.com/challenges/reduced-string/problem
+res = []
+    for c in s:
+        if res and res[-1] == c:
+            res.pop()
+        else:
+            res.append(c)
+    res = ''.join(res)
+    return res or "Empty String"
