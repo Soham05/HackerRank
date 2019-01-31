@@ -1,0 +1,25 @@
+def countApplesAndOranges(s, t, a, b, apples, oranges):
+    Apple_position = []
+    Orange_position = []
+    a_count = 0
+    o_count = 0
+    for i in apples:
+        i = i + a
+        Apple_position.append(i)
+    #print(Apple_position)
+    for j in oranges:
+        j = j + b
+        Orange_position.append(j)
+https://www.hackerrank.com/challenges/apple-and-orange/problem
+
+
+    #print(Orange_position)
+    
+    for i in Apple_position:
+        if i in range(s,t+1):
+            a_count+= 1
+    print(a_count)
+    for j in Orange_position:
+        if j in range(s,t+1):
+            o_count+=1
+    print(o_count)

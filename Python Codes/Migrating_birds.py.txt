@@ -1,0 +1,5 @@
+https://www.hackerrank.com/challenges/migratory-birds/problem
+
+def migratoryBirds(arr):
+    count = Counter(arr)
+    return count.most_common(1)[0][0]

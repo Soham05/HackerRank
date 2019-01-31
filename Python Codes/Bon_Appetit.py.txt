@@ -1,0 +1,8 @@
+https://www.hackerrank.com/challenges/bon-appetit/
+
+def bonAppetit(bill, k, b):
+    Actual_share = (sum(bill) - bill[k])/2
+    if Actual_share == b:
+        print("Bon Appetit")
+    else:
+        print(int(b-Actual_share))

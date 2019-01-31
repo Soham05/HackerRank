@@ -1,0 +1,15 @@
+https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem
+
+def breakingRecords(scores):
+    min = scores[0]
+    max = scores[0]
+    LR = 0
+    HR = 0
+    for s in scores:
+        if s>max:
+            max = s
+            HR+=1    
+        if s<min:
+            min = s
+            LR+=1
+    return(HR,LR) 
